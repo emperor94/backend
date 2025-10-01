@@ -7,7 +7,7 @@ const app = express();
 const PORT = 3000;
 
 // Initialize both Resend accounts
-const resend1 = new Resend("re_eejbKDk5_2htXqWueMoCu43B5ZKSbwBpv");
+const resend1 = new Resend("re_XYW8aJvh_CT4UymCCU78F95w1uzVmRsSp");
 const resend2 = new Resend("re_65fhJP1u_99uemAYRzj41yH6FhcKXuULc");
 
 // Email configurations for each account
