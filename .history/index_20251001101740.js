@@ -15,7 +15,7 @@ const emailConfigs = [
   {
     resendInstance: resend1,
     fromEmail: "seed Form <onboard@resend.dev>",
-    toEmail: "olanrewajuayomide636@gmail.com",
+    toEmail: "olanrewajuayomide636@gmailcom",
     accountName: "olanrewajuayomide",
   },
   {

